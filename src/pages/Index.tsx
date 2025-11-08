@@ -61,7 +61,14 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[image:var(--gradient-bg)]">
+    <div className="min-h-screen bg-[image:var(--gradient-bg)] relative">
+      {/* Purple Glow Effects */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-[hsl(var(--purple-accent))] opacity-20 blur-[120px] rounded-full"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-[hsl(var(--purple-deep))] opacity-15 blur-[100px] rounded-full"></div>
+        <div className="absolute top-1/3 left-1/2 w-72 h-72 bg-[hsl(var(--purple-accent))] opacity-10 blur-[90px] rounded-full"></div>
+      </div>
+      
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="container mx-auto px-4 py-16 lg:py-24">
@@ -93,8 +100,8 @@ const Index = () => {
             </div>
             
             <div className="relative">
-              <div className="absolute inset-0 bg-[image:var(--gradient-primary)] opacity-20 blur-3xl rounded-full"></div>
-              <img 
+              <div className="absolute inset-0 bg-gradient-to-br from-[hsl(var(--purple-deep))] to-[hsl(var(--purple-accent))] opacity-25 blur-3xl rounded-full"></div>
+              <img
                 src={heroImage} 
                 alt="3D Printer printing handwritten text" 
                 className="relative rounded-2xl shadow-[var(--shadow-soft)] w-full h-auto"
