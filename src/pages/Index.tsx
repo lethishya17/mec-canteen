@@ -132,7 +132,7 @@ const Index = () => {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
-            <Card className="p-6 hover:shadow-[var(--shadow-soft)] transition-[var(--transition-smooth)] hover:scale-105 group border-purple-500/20 animate-fade-in [animation-delay:100ms] opacity-0 [animation-fill-mode:forwards]">
+            <Card className="p-6 hover:shadow-[var(--shadow-soft)] transition-[var(--transition-smooth)] hover:scale-105 group border-purple-500/20">
               <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center mb-4 shadow-lg shadow-purple-500/50 group-hover:shadow-purple-500/70 transition-[var(--transition-smooth)] group-hover:rotate-12 group-hover:scale-110">
                 <Upload className="w-8 h-8 text-white" />
               </div>
@@ -140,7 +140,7 @@ const Index = () => {
               <p className="text-muted-foreground">Upload a clear image of your handwriting on paper</p>
             </Card>
 
-            <Card className="p-6 hover:shadow-[var(--shadow-soft)] transition-[var(--transition-smooth)] hover:scale-105 group border-pink-500/20 animate-fade-in [animation-delay:300ms] opacity-0 [animation-fill-mode:forwards]">
+            <Card className="p-6 hover:shadow-[var(--shadow-soft)] transition-[var(--transition-smooth)] hover:scale-105 group border-pink-500/20">
               <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center mb-4 shadow-lg shadow-pink-500/50 group-hover:shadow-pink-500/70 transition-[var(--transition-smooth)] group-hover:rotate-12 group-hover:scale-110">
                 <FileText className="w-8 h-8 text-white" />
               </div>
@@ -148,7 +148,7 @@ const Index = () => {
               <p className="text-muted-foreground">Enter the homework text you want to be written</p>
             </Card>
 
-            <Card className="p-6 hover:shadow-[var(--shadow-soft)] transition-[var(--transition-smooth)] hover:scale-105 group border-indigo-500/20 animate-fade-in [animation-delay:500ms] opacity-0 [animation-fill-mode:forwards]">
+            <Card className="p-6 hover:shadow-[var(--shadow-soft)] transition-[var(--transition-smooth)] hover:scale-105 group border-indigo-500/20">
               <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center mb-4 shadow-lg shadow-indigo-500/50 group-hover:shadow-indigo-500/70 transition-[var(--transition-smooth)] group-hover:rotate-12 group-hover:scale-110">
                 <Printer className="w-8 h-8 text-white" />
               </div>
