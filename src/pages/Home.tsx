@@ -57,6 +57,34 @@ const menuItems: MenuItem[] = [
     image: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lemonade.jpg",
     description: "Refreshing lemon drink with a pinch of salt",
     category: "Beverages"
+  },
+  {
+    name: "Paneer Butter Masala",
+    price: 110,
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Paneer_butter_masala.jpg",
+    description: "Rich and creamy paneer curry with butter and spices",
+    category: "Dinner"
+  },
+  {
+    name: "Chicken Curry",
+    price: 130,
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Indian_Chicken_Curry.jpg",
+    description: "Tender chicken cooked in aromatic curry sauce",
+    category: "Dinner"
+  },
+  {
+    name: "Roti with Dal",
+    price: 70,
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Dal_Roti.jpg",
+    description: "Soft rotis served with flavorful dal tadka",
+    category: "Dinner"
+  },
+  {
+    name: "Fish Fry",
+    price: 150,
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Fish_fry_1.jpg",
+    description: "Crispy fried fish with spicy masala coating",
+    category: "Dinner"
   }
 ];
 
@@ -64,7 +92,7 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const { toast } = useToast();
   
-  const categories = ["All", "Breakfast", "Lunch", "Beverages"];
+  const categories = ["All", "Breakfast", "Lunch", "Dinner", "Beverages"];
   
   const filteredItems = selectedCategory === "All" 
     ? menuItems 
